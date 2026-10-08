@@ -1,0 +1,12 @@
+name: Quick feature
+description: One box - just say what you want.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want?
+      description: As much or as little as you like. Paste screenshots or links if they help.
+    validations:
+      required: true
