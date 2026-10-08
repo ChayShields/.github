@@ -1,0 +1,51 @@
+name: Feature request
+description: Ask for a new feature or a change to a site or app.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe what you'd like in plain words. It will be picked up, built as a pull request and checked before anything goes live.
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want?
+      description: The feature or change, in your own words.
+      placeholder: e.g. Add a "Book now" button under the prices on the home page.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why? What problem does it solve?
+      description: Who it helps and what's not working now. This helps get it right first time.
+      placeholder: e.g. Customers scroll past the prices and can't see how to book.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Which page or area?
+      description: A page address or a description.
+      placeholder: e.g. https://example.co.uk/prices, or "the footer on every page"
+    validations:
+      required: false
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How urgent is it?
+      options:
+        - Whenever (nice to have)
+        - This week
+        - As soon as possible
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Screenshots, examples or anything else
+      description: Paste screenshots or links to sites that do it the way you like.
+    validations:
+      required: false
